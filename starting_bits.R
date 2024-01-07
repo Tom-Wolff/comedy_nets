@@ -2,8 +2,8 @@
 
 devtools::install_github('charlie86/spotifyr')
 
-Sys.setenv(SPOTIFY_CLIENT_ID = "e06491b3f4f54a1393d437bce5133b44")
-Sys.setenv(SPOTIFY_CLIENT_SECRET = "158a131bfba14fc29a7ade4af9aac35b")
+Sys.setenv(SPOTIFY_CLIENT_ID = )
+Sys.setenv(SPOTIFY_CLIENT_SECRET = )
 
 access_token <- spotifyr::get_spotify_access_token()
 
