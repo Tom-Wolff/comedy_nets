@@ -2,13 +2,10 @@
 
 devtools::install_github('charlie86/spotifyr')
 
-Sys.setenv(SPOTIFY_CLIENT_ID = )
-Sys.setenv(SPOTIFY_CLIENT_SECRET = )
+Sys.setenv(SPOTIFY_CLIENT_ID = "CLIENT_ID_HERE")
+Sys.setenv(SPOTIFY_CLIENT_SECRET = "CLIENT_SECRET_HERE")
 
 access_token <- spotifyr::get_spotify_access_token()
-
-authorization_code <- spotifyr::get_spotify_authorization_code(scope = 'user-read-playback-position')
-
 auth_object <- spotifyr::get_spotify_authorization_code(scope = spotifyr::scopes()[c(7,8,9,10,14,15)])
 
 
@@ -61,4 +58,3 @@ spacyr::entity_consolidate(test) %>% dplyr::filter(entity_type != "")
 # Regex for full name extraction
 "^[A-Z][a-z]*_[A-Z][a-z]*$"
 
-spacyr::spacy_install()
